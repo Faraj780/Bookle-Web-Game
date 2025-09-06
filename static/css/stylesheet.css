@@ -1,0 +1,494 @@
+/* --------------------------------------base.html---------------------------------- */
+body{
+    background-color: #fdf8ee;
+    padding-left:20%;
+    padding-right:20%;
+}
+
+#logo {
+    height: 80px;
+    width: 160px;
+    float: left;
+}
+
+.topIcons{
+    padding-top: 10px;
+    height: 80px;
+    width: 80px;
+    float: right;
+}
+
+#menuBar{
+    width: 100%;
+    background-color: #fdf8ee;
+    height: 6em;
+    position: sticky;
+    overflow: hidden;
+    top: 0px;
+    z-index: 1;
+    border-bottom: solid;
+}
+
+#footer{
+    background-color: #fdf8ee;
+    color: grey;
+    position: fixed;
+    font-size: 14px;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    text-align:center;
+}
+
+/* ------------------------------home.html------------------------------------------ */
+#instructionsText{
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    top: -10px;
+    margin: 100px;
+    font-size: 24px;
+    color: black;
+}
+
+.instructions{
+    position: relative;
+    margin-top: 40px;
+    height: auto;
+    text-align: center;
+    background-color: #fbd779;
+    width: 100%
+}
+
+h1{
+    position: relative;
+    top: 20px;
+    margin: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 36pt
+}
+
+#black-instructions{
+    position: relative;
+    top: 100px;
+    margin: 1000px;
+    font-family: 'Times New Roman', Times, serif;
+    float:right;
+    font-size: 36pt;
+}
+
+.logo-links{
+    height: 100px;
+    width: 200px;
+}
+
+#linkText{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+    display:inline;
+}
+
+/* -----------------------------leaderboard.html------------------------------------ */
+#leaderboardBackground{
+    position: absolute;
+    top: 25em;
+    height: auto;
+    margin:auto;
+    text-align: center;
+    background-color: #fbd779;
+    width: 60%;
+}
+
+#greenHeadings{
+    position: relative;
+    top: 0.5em;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+    color: green;
+    font-size: 36pt
+}
+
+#leaderboard-instructions{
+    font-family: 'Times New Roman', Times, serif;
+    position:relative;
+    top: 0.5em;
+    font-size: 30pt;
+    text-align: center;
+}
+.col-sm-4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    line-height: 60px;;
+}
+.header-column {
+    font-weight:bold;
+    font-size: 24t;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#line{
+    color:  #fbd779;
+}
+
+#column-headers{
+    height:auto;
+}
+/* ---------------------------------about_us.html------------------------------------ */
+.about-us-main{
+    position: relative;
+    margin:auto;
+    top: 4em;
+    height: 60%;
+    background-color: #fbd779;
+    width: 75%;
+}
+
+#black-headings{
+    font-family:'Times New Roman', Times, serif;
+    position:relative;
+    font-size: 30pt;
+    text-align: center;
+}
+
+.group-1a{
+    font-family:'Times New Roman', Times, serif;
+    line-height: 40px;
+    font-size: 22px;
+    text-align:center;
+}
+
+.jobs{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    text-align:center;
+}
+
+/* -------------------------------------login.html/signup.html----------------------------------- */
+
+.container{
+    height: 1000px;
+}
+
+.login-child{
+    top: 20em;
+    width: 60%;
+    float: left;
+    padding: 20px;
+    height: auto;
+}
+
+.signup-child{
+    width: 30%;
+    float: right;
+    padding: 20px;
+    border-left: 5px solid black;
+    height: 1000px;
+}
+
+.signup-child p {
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 22px;
+    top: 5em;
+}
+.signup-child a {
+    display: inline; 
+}
+
+#signup-green-headings{
+    position: relative;
+    top: 80px;
+    margin: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:center;
+    color: green;
+    font-size: 34pt
+}
+
+#signup-link{
+    position:absolute;
+    right: 180px;
+    top:255px;
+    text-align:center;
+    font-size: 20pt;
+}
+
+#signup-text{
+    position:absolute;
+    padding:50px;
+    top:240px;
+    text-align:center;
+    font-size: 20pt;
+}
+
+#login-green-headings{
+    position: relative;
+    top: 10px;
+    margin: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: green;
+    font-size: 36pt
+}
+
+.login-text{
+    position: relative;
+    padding-top: 600px;
+    padding-left: 20px;
+    font-size: 18pt;
+    text-align: center;
+    display: inline;
+}
+
+#signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-signin{
+    margin-top: 7em;
+}
+
+.helptext{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#input-label{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+}
+
+/* --------------------------daily_puzzle.html-----------------------------------*/
+
+#text-surrounding-guess{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18pt;
+}
+
+.guesses{
+    margin:auto;
+    position:sticky;
+    height: 100px;
+    width: 100%;
+    font-size: 28pt;
+    text-align: center;
+    display: inline;
+}
+
+#guessInput{
+    display:inline;
+    visibility: visible;
+    position: relative;
+    font-size: 12pt;
+    height: 30px;
+    width: 300px;
+}
+
+#submitButton{
+    position: relative;
+    top:-2px;
+    height: 32px;
+    width: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+}
+
+#cover{
+    float:right;
+    height: 245px;
+    width: 160px;
+}
+
+#guessResults{
+    font-family:'Times New Roman', Times, serif;
+    position: relative;
+    top: 2.5em;
+    align-content: center;
+    height: 400px;
+    width: 100%;
+    font-size: 18pt;
+    display:inline;
+}
+
+.guessResultsCover{
+    position:relative;
+    top:-1em;
+    width: 38%;
+    float: left;
+    padding: 20px;
+    height: auto;
+}
+
+.guessResultsCategories{
+    font-family:'Times New Roman', Times, serif;
+    padding-top: 50px;
+    width: 48%;
+    float: right;
+    padding: 20px;
+    height: auto;
+    line-height: 50px;
+}
+
+#guess-count{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18pt;
+}
+
+#options{
+    position:absolute;
+}
+
+.correctGuess{
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    background-color: rgb(35, 179, 35);
+}
+
+.closeGuess{
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    background-color: orange;
+}
+
+/* -------------------------- profile.html -----------------------------------*/
+
+#pfp{
+    padding-left:10px;
+    height: 100px;
+    width: 100px;
+    display:inline-block;
+}
+
+#username{
+    position:absolute;
+    padding-top:20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: green;
+    display:inline-block;
+    font-size: 28pt
+}
+
+/* -------------------------- complete.html -----------------------------------*/
+
+#complete-guesses{
+    top: 2em;
+    position:relative;
+    margin: auto;
+    background-color: green;
+    width: 75%;
+    height: auto;
+    color: white;
+    line-height: 80px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18pt;
+    overflow:hidden;
+}
+
+.discussion-link, .past-puzzles-link{
+    top:2em;
+    position: relative;
+    display:block;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    width: 100%;
+    font-size: 18pt;
+    line-height:60px;
+    font-weight: bold;
+}
+
+.discussion-link a, .discussion-link h2{
+    display:inline;
+}
+
+.past-puzzles-link a, .past-puzzles-link h2{
+    display:inline;
+}
+
+#complete-title{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.final-guess-count{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18pt;
+    top:3em;
+    display:block;
+    position: relative;
+}
+
+#complete-cover{
+    padding-left:30px;
+    padding-top:10px;
+    padding-bottom:10px;
+    float:left
+}
+.past-container{
+    position: relative;
+    top: 1em;
+
+    height:300px;
+}
+
+.pop-child{
+    width: 40%;
+    float: left;
+    padding: 20px;
+    height: 300px;
+    font-size: 20pt;
+    background-color: #fbd779;
+}
+
+.diff-child{
+    width: 40%;
+    float: right;
+    padding: 20px;
+    height: 300px;
+    font-size: 20pt;
+    background-color: #fbd779;
+}
+
+
+/* -------------------------- discussion.html -----------------------------------*/
+
+.comment-box {
+    border: 1px solid #000;
+    padding: 10px; 
+    margin-bottom: 20px; 
+    max-width: 600px; 
+    overflow-wrap: break-word;
+}
+
+/* ---------------------------- edit_account.html --------------------------------*/
+
+#edit-heading{
+    color:green;
+}
