@@ -1,6 +1,6 @@
 import os
 os.environ.setdefault('DJANGO_SETTINGS_MODULE',
-'group1a_wad_project.settings')
+'Django.settings')
 
 import requests
 import django
