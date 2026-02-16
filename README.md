@@ -1,3 +1,5 @@
+Bookle Web Game
+
 To run this program, clone the repository and run the following commands in the project directory:
 $ pip install -r requirements-dev.txt
 $ python manage.py runserver
