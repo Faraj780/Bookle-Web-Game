@@ -1,0 +1,45 @@
+{% extends 'bookle/base.html' %} 
+
+{% block title_block %} Register {% endblock %}
+
+
+{% block body_block %}
+    <div class="float-container">
+        <div class="login-child">
+            <h2 id="login-green-headings">Sign Up Here!</h2>
+            <form method="post" class="form-sign-up" role="form" action=".">
+              {% csrf_token %}
+
+                {% if form.errors %}
+                    </br>
+                    {% for field in form %}
+                        {% for error in field.errors %}
+                            <p id="error-message">{{ error }}</p>
+                        {% endfor %}
+                    {% endfor %}
+                {% endif %}
+
+                <br>
+                <label for="id_username" id="input-label">Username:</label> 
+                <input type="text" class="form-control" name="username" maxlength="150" autofocus="" required="" id="id_username">
+                    
+                <label for="id_email" id="input-label">Email:</label> 
+                <input type="email" class="form-control" name="email" required="" id="id_email">
+
+                <label for="id_password1" id="input-label">Password:</label>
+                <input type="password" class="form-control" name="password1" required="" id="id_password1">
+
+                <label for="id_password2" id="input-label">Password confirmation:</label> 
+                <input type="password" class="form-control"name="password2" required="" id="id_password2"> <span class="helptext">Enter the same password as before, for verification.</span></p>
+                <br />
+                
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </div>
+
+        <div class="signup-child">
+            <h2 id="signup-green-headings">Already got an account?</h2>
+            <p><a href="{% url 'bookle:login' %}">Login</a> to edit or view your existing account!</p>
+        </div>
+    </div>
+{% endblock %}

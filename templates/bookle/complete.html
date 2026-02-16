@@ -1,0 +1,34 @@
+{% extends 'bookle/base.html' %}
+{% load static %}
+
+{% block assets_block %}
+    <script src="{% static 'scripts/complete.js' %}"></script>
+{% endblock %}
+
+{% block title_block %}
+    Complete
+{% endblock %}
+
+
+{% block body_block %}
+<div class="container-fluid">
+    <h2 id="complete-title" ><strong>Congratulations! The Bookle answer was...</strong></h2>
+    <div id="complete-guesses">
+
+        &emsp; <strong>Title:</strong> <label id="title"></label> <br>
+        &emsp; <strong>Author:</strong> <label id="author"></label><br>
+        &emsp; <strong>Release Year:</strong> <label id="releaseYear"></label><br>
+    </div>
+
+    <div class="final-guess-count"></div>
+    
+    <div class="discussion-link">
+        <h2>..Join the discussion with fellow players</h2>
+       <a href="{% url 'bookle:discussion' %}"><strong><h2> here!</h2></strong></a>
+    </div>
+    <div class="past-puzzles-link">
+        <h2>...Play past puzzles</h2>
+        <a href="{% url 'bookle:past_puzzles' %}"><strong><h2> here!</h2></strong></a>
+    </div>
+</div>
+{% endblock %}

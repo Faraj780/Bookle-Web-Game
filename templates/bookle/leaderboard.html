@@ -1,0 +1,34 @@
+
+{% extends 'bookle/base.html' %}
+{% load static %}
+
+{% block title_block %}
+    Leaderboard
+{% endblock %}
+
+
+{% block body_block %}
+    <h2 id="leaderboard-instructions">See how fellow players have scored today...</h2>
+    <h1 id="greenHeadings">Leaderboard</h1>
+    <div class="container" id="leaderboardBackground">
+         <hr id="line"/>
+        <div class="container-fluid" id="column-headers">
+        <div class="row">
+            <div class="col-sm-4 header-column">Place</div>
+            <div class="col-sm-4 header-column">Username</div>
+            <div class="col-sm-4 header-column">Guesses Used</div>
+        </div>
+        <hr id="line"/>
+        </div>
+        {% if user %}
+            {% for user in leaderboard_guesses %}
+            <div class="row">
+                <div class="col-sm-4">{{forloop.counter}}</div>
+                <div class="col-sm-4">{{user.userID}}</div>
+                <div class="col-sm-4">{{user.guesses}}</div>
+             </div>
+            {% endfor %}
+        {% endif %}
+        <br><br>
+    </div>
+{% endblock%}
